@@ -1,0 +1,414 @@
+/* 
+    Teletext stylesheet 
+    Galax 2014-2015 http://galax.xyz
+    
+    MODE7GX3.TTF font by Galax 2014 - based on ModeSeven, created in 1998 by Andrew Bulhak
+*/
+
+/* Hard reset */
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, audio, video {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+/* 
+    Teletext palette 
+    000000 0 black
+    ff0000 1 red
+    00ff00 2 green
+    ffff00 3 yellow
+    0000ff 4 blue
+    ff00ff 5 magenta
+    00ffff 6 cyan
+    ffffff 7 white
+*/
+}
+/* flashing class, it's like the 'blink' tag is back */
+
+.flashing {
+	animation: flashing 1.3s steps(5, start) infinite;
+	-webkit-animation: flashing 1.3s steps(5, start) infinite;
+}
+@keyframes flashing {
+	to {
+		visibility: hidden;
+	}
+}
+@-webkit-keyframes flashing {
+	to {
+		visibility: hidden;
+	}
+}
+/* concealed text is initially hidden, reveal by modifying class */
+
+.conceal {
+	opacity: 0;
+}
+.colour0, .black, a.black, .black a {
+	color: #000000;
+}
+.colour1, .red, a.red, .red a {
+	color: #ff0000;
+}
+.colour2, .green, a.green, .green a {
+	color: #00ff00;
+}
+.colour3, .yellow, a.yellow, .yellow a {
+	color: #ffff00;
+}
+.colour4, .blue, a.blue, .blue a {
+	color: #0000ff;
+}
+.colour5, .magenta, a.magenta, .magenta a {
+	color: #ff00ff;
+}
+.colour6, .cyan, a.cyan, .cyan a {
+	color: #00ffff;
+}
+.colour7, .white, a.white, .white a {
+	color: #ffffff;
+}
+.colour0bg, .blackbg {
+	background-color: #000000;
+}
+.colour1bg, .redbg {
+	background-color: #ff0000;
+}
+.colour2bg, .greenbg {
+	background-color: #00ff00;
+}
+.colour3bg, .yellowbg {
+	background-color: #ffff00;
+}
+.colour4bg, .bluebg {
+	background-color: #0000ff;
+}
+.colour5bg, .magentabg {
+	background-color: #ff00ff;
+}
+.colour6bg, .cyanbg {
+	background-color: #00ffff;
+}
+.colour7bg, .whitebg {
+	background-color: #ffffff;
+}
+@font-face {
+	font-family: Mode7;
+	src: url('../fonts/MODE7GX3.TTF'), url('../MODE7GX3.EOT');
+	/* .EOT is for IE */
+}
+body, td.teletext {
+	font-family: Mode7, monospace, courier, fixed;
+	font-size: 18px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	color: #ffffff;
+	background: #000000;
+	line-height: 20px;
+}
+body {
+	border-width: 20px 20px 20px 20px;
+	/* t r b l */
+	padding: 20px;
+}
+.teletext {
+	text-align: left;
+	white-space: pre;
+	display: block;
+	font-size: 20px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+@font-face {
+	font-family: 'modesevenregular';
+	src: url('../fonts/mode7gx3-webfont.woff2') format('woff2'), url('../fonts/mode7gx3-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'teletekstregular';
+	src: url('../fonts/teletekst-webfont.woff2') format('woff2'), url('../fonts/teletekst-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	background-color: #000000;
+}
+.container {
+	position: relative;
+	background-color: #0000ff;
+	display: flex;
+	align-items: center;
+	width: 70%;
+	height: 4em;
+	margin: auto;
+	margin-top: 4em;
+	margin-bottom: 3em;
+}
+.subcontainer {
+	position: fixed;
+	background-color: #0000ff;
+	display: flex;
+	align-items: center;
+	width: 70%;
+	height: 2em;
+	left: 50%;
+	margin-left: -35%;
+	bottom: 2em;
+	text-align: center;
+	margin-top: 2em;
+}
+#logo {
+	width: 90%;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+h1 {
+	font-family: modesevenregular;
+	font-size: 2em;
+}
+.menubar {
+	width: auto;
+	margin: auto;
+	margin-right: 11em;
+	margin-bottom: 1.5em;
+}
+.menutext {
+	font-family: modesevenregular;
+	color: white;
+	margin: 1em;
+	float: right;
+}
+#menutext {
+	font-family: modesevenregular;
+	color: white;
+	margin: 10%;
+	float: right;
+}
+.submenutext {
+	list-style-type: none;
+	display: flex;
+	margin: auto;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+.submenutextitem {
+	display: inline-block;
+	width: 100%;
+	color: black;
+	link-style: none;
+}
+
+.submenutextlink {
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.submenutextlink:hover {
+	padding: 8px 20px 8px 20px;	
+	color: black;
+	background-color: yellow;
+}
+.yellow blackbg {
+	font-family: modesevenregular;
+	max-width: 70%;
+	color: white;
+}
+.centersub {
+	width: 70%;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: -2em;
+	text-align: center;
+}
+#subtitletext {
+	white-space: normal;
+	font-size: 0.95em;
+	color: #ff00ff;
+	transform: scaleY(2);
+	text-transform: uppercase;
+}
+#subtitletext2 {
+	white-space: normal;
+	color: #ff00ff;
+	transform: scaleY(2);
+	text-transform: uppercase;
+	margin-top: -1em;
+	margin-bottom: -1.5em;
+	width: 80%;
+	display: inline-block;
+}
+#menu {
+	width: 70%;
+	margin: auto;
+	margin-top: 2em;
+	border-spacing: 0em 2.5em;
+}
+#menulist {
+	list-style-type: none;
+	font-size: 18px;
+}
+#pageind {
+	text-align: left;
+	white-space: nowrap;
+}
+#pagetitle {
+	z-index: 1
+}
+#pgnum {
+	color: #00ffff;
+	padding: 10px 20px;
+}
+#pgnum:hover {
+	padding: 10px 20px;
+	background-color: yellow;
+	color: black;
+	border: 2em;
+	border-color: 1px solid white;
+	border-radius: 0;
+	border-width: 0;
+	border-bottom: 3px solid $aqua;
+}
+
+.indexlink {
+text-decoration: none;
+color: #00ffff;
+padding: 10px
+}
+
+.indexlink:hover {
+textdecoration: none;
+color: black;
+}
+
+.referencelink {
+text-decoration: none;
+color: #00ff00;
+}
+
+.referencelink:hover {
+textdecoration: none;
+color: #fff;
+}
+
+.bodytext {
+	width: 65%;
+	margin: auto;
+	margin-top: 3em;
+	line-height: 1.8em;
+}
+.bodytexthighlight {
+	padding-bottom: 1.5em;
+	color: white;
+}
+.bodytextnormal {
+	padding-bottom: 1.5em;
+	color: #23D5DD;
+}
+.bodytextend {
+	margin-top: 5em;}
+	
+.bodytextem {
+	color: #ACFBFF;
+ 	text-transform: uppercase;}
+ 	
+#logorow {
+	padding-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	display: block;
+}
+
+#barchart {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.bartitlecenter {
+text-align: center;
+margin-top: -1.5em;
+margin-bottom: 2em;
+}
+
+.bartitle {
+font-size: 0.8em;
+opacity: 0.5;
+}
+
+#mickey {
+float: right;
+margin: 10px;
+width: 20%;}
+
+#xfiles {
+float: right;
+margin: 20px;
+width: 15%;}
+
+#tardis {
+float: right;
+margin: 20px;
+height: 200px;}
+
+#pride {
+float: left;
+margin: 20px;
+margin-right: 40px;
+width: 20%;}
+
+.pullquote {
+	text-transform: uppercase;
+	transform: scaleY(2);
+	font-size: 1.5em;
+	width: 50%;
+	color: #ff00ff;
+	text-shadow: red 2px 2px;
+}
+
+.pullquote2 {
+	text-transform: uppercase;
+	transform: scaleY(2);
+	font-size: 1.5em;
+	width: 50%;
+	color: #00ff00;
+	text-shadow: blue 2px 2px;
+}
+
+.pullquotecenter {
+width: 70%;
+margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.bodytextreference {
+font-size: 0.7em;
+line-height: 1.2em;}
+
+.referencetitle {
+color: #00ff00;
+}
+
+.referencecenter {
+width: 60%;
+margin: 0 auto;
+margin-bottom: 2em;
+}
+@media only screen and (max-width: 900px) {
+	.menubar {
+		display: none;
+	}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 	 <title>Interactive Storytelling...</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('TTtime').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div class="menubar">
+	<span class="menutext">jordanearle.com</span>
+	<span class="menutext">P105</span>
+	<span class="menutext"><span>
+		<script type="text/javascript">
+		var d=new Date()
+		var weekday=new Array(7)
+		weekday[0]="Sun"
+		weekday[1]="Mon"
+		weekday[2]="Tues"
+		weekday[3]="Wed"
+		weekday[4]="Thurs"
+		weekday[5]="Fri"
+		weekday[6]="Sat"
+		document.write(weekday[d.getDay()])
+</script></span>
+
+<span>		
+	<script type="text/javascript">
+		var d = new Date()
+		document.write(d.getDate())
+</script></span> 
+<span>
+	<script type="text/javascript">
+		var d=new Date()
+		var month=new Array(12)
+		month[0]="January"
+		month[1]="February"
+		month[2]="March"
+		month[3]="April"
+		month[4]="May"
+		month[5]="June"
+		month[6]="July"
+		month[7]="August"
+		month[8]="September"
+		month[9]="October"
+		month[10]="November"
+		month[11]="December"
+		document.write(month[d.getMonth()])
+	</script>
+</span>
+</span>
+	
+	<span class="menutext">
+		<span style="color: yellow;" id="TTtime"></span>
+	</span>
+</div>
+
+<div class="container">
+<img id="logo" src="img/logo.png" alt="Smiley face" height="auto" width="120%">
+</div>
+
+<div class="centersub">
+<div style="color: #FFFF00" id="subtitletext2">Interactive Storytelling: Try to Sneak Around?</div>
+</div>
+
+<div class="bodytext">
+
+<img id="logorow" src="img/winky.png" alt="Logo Row" height="auto" width=40%">
+
+<p class="bodytexthighlight">
+In April 1953, CBS began airing a new television series for children, <span class="bodytextem">Winky Dink and You</span>. The new show was hosted by Jack Barry, a popular television anchor at the time, and sidekicks - Winky Dink and his dog Woofer. What made the show stand out compared to other attempts at programming for children were the interactive elements. The simpler elements involved Jack asking questions directly to his young audience at home, or instructing them to shout out words to "teleport them to a magical land"/<p>
+
+<p class="bodytextnormal">
+However, the true groundbreaking interactivity came with the aid of a "Magic Window". Barry instructed children to draw on their television screens (or ideally on the Magic Window) using crayons and follow lines that were traced by Barry.
+Barry had children drawing along with the episode, adding flowers onto Uncle Slim's jacket, or giving him a new nose - prompting a sneeze from the actor. All-and-all the experience was something unique and memorable for many kids in the 1950s.</p>
+
+<p class="bodytextnormal">
+The show's host Barry frequently told kids to convince their parents to send away for the Magic Window and Crayon kit - which was actually a cheap, thin sheet of plastic that adhered to the television screen by static electricity.</p>
+
+<div class="pullquotecenter">
+<span class="pullquote">Send your name and address, along with 50 cents, to Winky Dink, Box 5, New York, 19, New York!</span>
+</div>
+
+<p class="bodytextnormal">"Send your name and address, along with 50 cents, to Winky Dink, Box 5, New York, 19, New York! The constant repetition of this phrase, which was surely ingrained deeply in the heads of many parents across America in the 50s, led to Barry and his titular sidekick Winky Dink selling over 2 million of the Magic Screen units. 
+</p>
+
+<p class="bodytextnormal">As <span class="bodytextem">CNN</span> explained, a strong case can be made that the Winky Dink show played a pivotal role in ushering in the age of interactivity in television; it paved the way for future visionaries to iterate and build on their success. Bill Gates would even go on to mention and show the Winky Dink kit at an early keynote for Microsoft TV in the 1990s.</p>
+
+<p class="bodytextnormal">When we think about interactivity, it's easy to think about the immediate and now. We're surrounded by devices that all boast several forms of interactions from touch with <span class="bodytextem">Apple's iPhone</span> to sound with <span class="bodytextem">Amazon Echo</span>. Even though this is the case, the idea of interactive media has existed for decades and the hybridisation of interaction and television is nothing new, either.
+</p>
+
+<p class="bodytextnormal">As Jared Sandberg noted in a <span class="bodytextem">Wall Street Journal</span> article, media companies have spent millions trying in vain to find a reason for "couch potatoes to engage with the tube and control programming."
+</p>
+
+<img id="mickey" src="img/book.png" alt="Logo Row" height="auto" width=40%">
+
+<p class="bodytextnormal">Another attempt is adding the element of choice into programming. The late 1970s and early 1980s saw the rise of a fairly novel concept, <span class="bodytextem">Choose-Your-Own-Adventure books</span>. Kids were presented with a series of options and then instructed to turn to a specific page to see how their choice played out. 
+</p>
+
+<p class="bodytextnormal">In the era of "Golden TV" in the 1980s and with both British and American broadcasters looking for the "next big thing" in television programming, it was only a matter of time before one of them took this choice-based narrative concept and applied it to television. </p>
+
+<p class="bodytextnormal">In 1988, the BBC launched <span class="bodytextem">What's Your Story?</span> It first aired in 1988 as a series of daily episodes between Monday to Friday over two weeks. Aimed exclusively towards children, it featured a group of kids being whisked away on a whimsical adventure by a mysterious figure.
+ </p>
+ 
+ <p class="bodytextnormal">The unique element? At the end of every episode, children were invited to phone up and say what should happen next. This element became so popular that it crashed BT's phone lines at one point, with 500,000 calls during the first broadcast. To accommodate this narrative the show was written, produced and edited 24 hours before airing. Work on the next episode started after several hours had passed and the phone lines had closed and carried on throughout the night. </p>
+ 
+  <p class="bodytextnormal">This choice-based narrative was enjoyed by children, with many describing the show as "full of surprises" and "great fun" according to Gary Westfahl's book, Coming of Age: Children's Literature and Popular Culture.</p>
+  
+  <img id="pride" src="img/dc.png" alt="Logo Row" height="auto" width=40%">
+  
+<p class="bodytextnormal">Unsurprisingly, this format wasn't sustainable for the BBC and they halted production after two seasons. Phone-in-voting was a rather popular format of interaction at the time, with companies like <span class="bodytextem">DC Comics</span> holding a 1988 phone-in campaign to decide the fate of one of their most popular characters, Jason Todd.
+</p>
+
+  <p class="bodytextnormal">In the decades that followed, other attempts at a fusion between interactivity and live-action would be attempted. Perhaps some of the more successful have been 'FMV' titles - or full motion video. They use live-action pre-recorded video segments and combines these with typical video game controls. When consoles and PCs started to use CDs instead of cartridges as games, this led to a slew of FMV titles (they required a large amount of storage due to the high-amount of uncompressed video) such as Night Trap (1992), The 7th Guest (1993), Voyeur (1993) and Phantasmagoria (1995).</p>
+
+<p class="bodytextnormal">
+As technology has developed, television producers have once again started looking at how they can increase viewer engagement with interactive elements or choice-based-storytelling..</p>
+
+  <p class="bodytextnormal">As Alan Kirby argued in his book Digimodernism, interactive content likely spelt the death for those aforementioned Choose-Your-Own-Adventure books. In addition, the invention of hypertext and the world-wide-web creating far more creative narratives and engaging interactions than the books could manage.</p>
+  
+    <img id="logorow" src="img/iphone.png" alt="Logo Row" height="auto" width=15%">
+
+  
+    <p class="bodytextnormal">These books were replaced with interactive digital experiences.  An example would be HBO's <span class="bodytextem">Mosaic</span> - a choose-your-own-adventure murder mystery by Steven Soderbergh. Viewers watched the show through an iOS/Android app that let them watch and then make a decision about what to do next, viewers then could reach multiple endings. Steven Soderbergh was adamant during production that his story should have integrity and depth and not just be used to &ldquo;prop up technology.&rdquo;
+</p>
+
+    <p class="bodytextnormal">Netflix is reportedly working on a choose your own adventure episode of <span class="bodytextem">Black Mirror</span>, after releasing a number of children's television shows in the format including an interactive <span class="bodytextem">Puss in Boots</span> special aimed at young children. Games like <span class="bodytextem">Life is Strange</span>, Telltale's <span class="bodytextem">Walking Dead</span> and <span class="bodytextem">Heavy Rain</span> have all successfully implemented choice-based narratives into their games, it only makes sense that media companies like Netflix and HBO start exploring the future potential for television.</p>
+
+    <p class="bodytextnormal">Interactive Storytelling is surely the most engaged a fan could be with content - they get to control their favourite character's decisions and actions, so they're naturally more invested from the offset. Just like transmedia sinks a user deeper into the fictional world of their favourite television character, interactivity pulls you in and intertwines your experience with that of the character on screen.</p>
+
+
+
+
+<p class="bodytextend"></span>
+
+
+</div>
+
+<div class="subcontainer">
+<ul class="submenutext">
+	<li class="submenutextitem"><a class="submenutextlink" href="index.html">HOME 001</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="#">ABOUT 367</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="#">PRINT 995</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="fandom.html">PREVIOUS PG</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="conclusion.html">NEXT PG</a></li>
+</ul>
+</div>
+
+</body>

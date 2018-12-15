@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 	 <title>In The Beginning...</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('TTtime').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div class="menubar">
+	<span class="menutext">jordanearle.com</span>
+	<span class="menutext">P102</span>
+	<span class="menutext"><span>
+		<script type="text/javascript">
+		var d=new Date()
+		var weekday=new Array(7)
+		weekday[0]="Sun"
+		weekday[1]="Mon"
+		weekday[2]="Tues"
+		weekday[3]="Wed"
+		weekday[4]="Thurs"
+		weekday[5]="Fri"
+		weekday[6]="Sat"
+		document.write(weekday[d.getDay()])
+</script></span>
+
+<span>		
+	<script type="text/javascript">
+		var d = new Date()
+		document.write(d.getDate())
+</script></span> 
+<span>
+	<script type="text/javascript">
+		var d=new Date()
+		var month=new Array(12)
+		month[0]="January"
+		month[1]="February"
+		month[2]="March"
+		month[3]="April"
+		month[4]="May"
+		month[5]="June"
+		month[6]="July"
+		month[7]="August"
+		month[8]="September"
+		month[9]="October"
+		month[10]="November"
+		month[11]="December"
+		document.write(month[d.getMonth()])
+	</script>
+</span>
+</span>
+	
+	<span class="menutext">
+		<span style="color: yellow;" id="TTtime"></span>
+	</span>
+</div>
+
+<div class="container">
+<img id="logo" src="img/logo.png" alt="Smiley face" height="auto" width="120%">
+</div>
+
+<div class="centersub">
+<div style="color: #FFFF00" id="subtitletext2">In the Beginning There Were Five: An Introduction</div>
+</div>
+
+<div class="bodytext">
+
+<img id="logorow" src="img/logorow.png" alt="Logo Row" height="auto" width=80%">
+
+<p class="bodytexthighlight">
+With the Oxford English Dictionary adding the phrases 'binge-watch' and 'spoiler alert' to its repertoire in June 2018, it's clear that the television landscape is transforming.<p>
+
+<p class="bodytextnormal">
+To understand exactly how, we have to go back to the very basics. Since its inception, Television has existed with one simple goal in mind - to sell people products. The first television commercial aired on June 1st, 1941 for the <span class="bodytextem">Bulova Watch Co</span>. The 10-second commercial reportedly cost $9 at the time, which is around $500 adjusted for inflation; this is a bargain by today's standards. In recent years, some companies have paid upwards of $5 million for advertisements during the annual US Super Bowl sporting event - paying for the privilege of promoting their product to an audience of around 100 million.<p>
+
+<p class="bodytextnormal">
+Television is still mostly consumed on a linear basis. Linear programming (the idea of watching a show live, as it airs) in the United States is consumed on one of the 'main-five' networks: ABC, CBS, The CW, NBC and Fox. They each have regularly scheduled 'seasons' of shows that viewers watch live, generally in 20 or 45-minute blocks with regular ad breaks. The popularity of these shows isa measured by the Nielsen Research Group.</p>
+
+<p class="bodytextnormal">
+They track viewers using physical boxes in homes. Nielsen gives boxes out very selectively ensuring limited bias and diverse viewing habits. They then generate a metric referred to as 'ratings' which are broken down by age groups.  For ad sales, the most important metric is the 18-49 age group. For ad sales, the most important metric is the 18-49 age group. For example, a recent episode of the <span class="bodytextem">Big Bang Theory</span> drew a 2.1 rating (12.52 million live-individual viewers) whilst a recent episode of <span class="bodytextem">Supernatural</span> averaged a 0.5 rating (1.53 million), making Ad buys/product placement much more lucrative for the Big Bang Theory.</p>
+
+<img id="barchart" src="img/barchart.png" alt="Logo Row" height="auto" width=80%">
+<div class=bartitlecenter>
+<span class="bartitle">OVERVIEW OF RECENT TELEVISION RATINGS</span>
+</div>
+
+<p class="bodytextnormal">
+These five networks each fight for ratings. To do this they launch hot new dramas and reality programming every year in an attempt to best the others. Rating stragglers or low-performing shows are kicked to the wayside or cancelled to make room for new programming. Recently however, the industry has begun to shift to a non-linear programming model.</p>
+
+<p class="bodytextnormal">
+As the industry evolved, the concept and favoured status of linear programming began to decline. Viewers wanted flexibility, and the introduction of the home Digital Video Recorder--or DVR gave it to them. They were suddenly able to record their favourite content and watch it on their schedule. </p>
+
+<p class="bodytextnormal">
+However, with the advent of streaming or Video on Demand, true nonlinear programming has been born. Viewers suddenly have access to huge libraries of content available instantly with a click of a mouse or a tap on a screen. They can watch from their couch, bed or on the bus. No longer are they limited by just five broadcast networks, or expensive cable packages--suddenly they have a wealth of original content from an array of streaming services.  </p>
+
+<p class="bodytextnormal">
+A study published by <span class="bodytextem">AwesomenessTV</span> (an American production company creating content for teens and preteens) found that 28% of teenagers are spending their free time watching content on Netflix; this compares to only 14% watching live-TV. 
+Increasingly live-TV seems to be outpaced and outmatched by the growth and consumption of streaming services like Netflix and Amazon. </p>
+
+<p class="bodytextnormal">
+Millennials (adults aged 18-31) are another group that are quickly gaining a reputation for ditching live-TV, with an increasing number becoming 'cord cutters' (people who cut their traditional cable package in favour of streaming services). 20% of 18 to 31-year-olds opt to watch traditional live-TV through services like <span class="bodytextem">Hulu</span> or <span class="bodytextem">YouTube TV</span> over traditional networking. In 2018, there will be 22.2 million cord cutters ages 18 and older.</p>
+
+
+<img id="mickey" src="img/mickey.png" alt="Logo Row">
+<p class="bodytextnormal">
+It's no wonder, then, that almost every month a new streaming service is reported on or launched. Recent additions include the likes of the recently launched <span class="bodytextem">DC Universe</span>, the long rumoured <span class="bodytextem">Apple TV</span> and the upcoming <span class="bodytextem">Disney Plus.</span></p>
+
+<p class="bodytextnormal">
+This essay aims to explore the connection between technology and television's shift towards interactive content. Whether you're watching on a television, your iPad or your phone - is the age of 'Transmedia Storytelling' finally here?</p>
+
+<p class="bodytextend"></span>
+
+
+</div>
+
+<div class="subcontainer">
+<ul class="submenutext">
+	<li class="submenutextitem"><a class="submenutextlink" href="index.html">HOME 001</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="#">ABOUT 367</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="#">PRINT 995</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="index.html">PREVIOUS PG</a></li>
+	<li class="submenutextitem"><a class="submenutextlink" href="transmedia.html">NEXT PG</a></li>
+</ul>
+</div>
+
+</body>
