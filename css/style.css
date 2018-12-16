@@ -150,6 +150,7 @@ body {
 }
 .subcontainer {
 	position: fixed;
+	bottom: 0;
 	background-color: #0000ff;
 	display: flex;
 	align-items: center;
@@ -157,9 +158,9 @@ body {
 	height: 2em;
 	left: 50%;
 	margin-left: -35%;
-	bottom: 2em;
 	text-align: center;
 	margin-top: 2em;
+	  border-bottom: 1em solid black;
 }
 #logo {
 	width: 90%;
