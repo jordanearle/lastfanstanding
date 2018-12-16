@@ -419,6 +419,9 @@ line-height: 1.2em;}
 
 .referencetitle {
 color: #00ff00;
+position: relative;
+display: block;
+padding-bottom: 1em;
 }
 
 .referencecenter {
