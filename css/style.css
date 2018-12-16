@@ -215,7 +215,7 @@ h1 {
 }
 .submenutextitem {
 	display: inline-block;
-	width: 100%;
+	width: 110%;
 	color: black;
 	link-style: none;
 }
@@ -492,3 +492,5 @@ opacity:1.0;
 	.menubar {
 		display: none;
 	}
+	
+	
