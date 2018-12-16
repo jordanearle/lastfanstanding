@@ -249,6 +249,16 @@ h1 {
 	width: 80%;
 	display: inline-block;
 }
+#subtitletext3 {
+	white-space: normal;
+	color: #ff00ff;
+	transform: scaleY(2);
+	text-transform: uppercase;
+	margin-top: -1em;
+	margin-bottom: 1em;
+	width: 80%;
+	display: inline-block;
+}
 #menu {
 	width: 70%;
 	margin: auto;
@@ -304,6 +314,13 @@ color: #fff;
 
 .bodytext {
 	width: 65%;
+	margin: auto;
+	margin-top: 3em;
+	line-height: 1.8em;
+}
+
+.bodytext2 {
+	width: 45%;
 	margin: auto;
 	margin-top: 3em;
 	line-height: 1.8em;
@@ -408,6 +425,39 @@ width: 60%;
 margin: 0 auto;
 margin-bottom: 2em;
 }
+
+.colophonheader1 {
+font-size: 1.2em;
+color: #00ff00;
+} 
+
+.colophonheader2 {
+font-size: 1.2em;
+color: #ff0000;
+} 
+
+.colophonheader3 {
+font-size: 1.2em;
+color: #ff00ff;
+} 
+
+.colophonbody {
+font-size: 0.9em;
+color: #fff;
+margin-bottom: 1.5em;
+} 
+
+.colophonlink {
+text-decoration: none;
+color: #00ffff;
+}
+
+.colophonlink:hover {
+textdecoration: none;
+color: #fff;
+}
+
+
 @media only screen and (max-width: 900px) {
 	.menubar {
 		display: none;
