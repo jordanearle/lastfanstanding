@@ -193,6 +193,16 @@ h1 {
 	margin: 10%;
 	float: right;
 }
+
+#menutextlink {
+	color: #fff;
+	text-decoration: none;}
+
+#menutextlink:hover {
+	color: black;
+	background-color: yellow;}
+	
+	
 .submenutext {
 	list-style-type: none;
 	display: flex;
